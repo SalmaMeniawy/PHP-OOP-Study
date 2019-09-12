@@ -31,5 +31,8 @@
 
 	//call setmethod for name
 	$exec->setName("Ricky");
-	
+
+	//call get method for name
+	$exec->getName();
+
 ?>
