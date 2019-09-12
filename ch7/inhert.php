@@ -35,4 +35,7 @@
 	//call get method for name
 	$exec->getName();
 
+	//call pillageCompany method
+	$exec->pillageCompany();
+
 ?>
