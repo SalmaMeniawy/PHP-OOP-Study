@@ -12,6 +12,10 @@
 		{
 			$this->salary = $salary;
 		}
+		public function getSalary()
+		{
+			return $this->salary ;
+		}
 	}
 
 ?>
