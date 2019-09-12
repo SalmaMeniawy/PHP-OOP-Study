@@ -2,7 +2,7 @@
 	//define base class
 	class Employee
 	{
-		protected $name;
+		private $name;
 		//create setter and getter for name
 		function setName($name)
 		{
@@ -45,4 +45,5 @@
 	//call pillageCompany method
 	$exec->pillageCompany();
 
+	echo $exec->name;
 ?>
