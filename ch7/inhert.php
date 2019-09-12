@@ -9,6 +9,11 @@
 			if($name="")echo "Name can n't be Blank !!!";
 			else $this->name = $name;	
 		}
+		//define getter for name
+		function getName()
+		{
+			return "My name is ".$this->name = $name."<br>";
+		}
 	}
 
 ?>
