@@ -28,4 +28,8 @@
 <?php
 	//create new instance "object"from executive class
 	$exec = new Executive();
+
+	//call setmethod for name
+	$exec->setName("Ricky");
+	
 ?>
