@@ -2,17 +2,23 @@
 	//define base class
 	class Employee
 	{
-		private $name;
+		protected $name;
 		//create setter and getter for name
 		function setName($name)
 		{
-			if($name="")echo "Name can n't be Blank !!!";
-			else $this->name = $name;	
+			if($name=="")
+				{
+					echo "Name can n't be Blank !!!";
+				}
+			else 
+			{
+				$this->name = $name;
+			}	
 		}
 		//define getter for name
 		function getName()
 		{
-			return "My name is ".$this->name = $name."<br>";
+			return "My name is {$this->name}<br>";
 		}
 	}
 	class Executive extends Employee
@@ -33,7 +39,8 @@
 	$exec->setName("Ricky");
 
 	//call get method for name
-	$exec->getName();
+	echo $exec->getName();
+	
 
 	//call pillageCompany method
 	$exec->pillageCompany();
