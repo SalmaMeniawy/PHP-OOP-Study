@@ -15,5 +15,13 @@
 			return "My name is ".$this->name = $name."<br>";
 		}
 	}
+	class Executive extends Employee
+	{
+		//create function
+		function pillageCompany()
+		{
+			echo "I am selling company assets to finance my yachet !!";
+		}
 
+	}
 ?>
