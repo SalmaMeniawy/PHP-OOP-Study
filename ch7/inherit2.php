@@ -19,7 +19,10 @@
 	}
 	class Executive extends Employee
 	{
-		
+		public function pillageCompany()
+		{
+			$this->setSalary($this->getSalary() * 10);
+		}
 	}
 
 ?>
