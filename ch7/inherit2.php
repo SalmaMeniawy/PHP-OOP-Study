@@ -32,5 +32,9 @@
 		}
 	}
 	$ceo = new CEO();
-	
+	$ceo->setName("Bernie");
+	$ceo->setSalary(100000);
+	$ceo->pillageCompany();
+	$ceo->getFacelift();
+	echo "Bernie's salary is :{$ceo->getSalary()}<br>";
 ?>
