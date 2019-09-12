@@ -31,4 +31,6 @@
 			echo "nip nip tuck tuck \n";
 		}
 	}
+	$ceo = new CEO();
+	
 ?>
