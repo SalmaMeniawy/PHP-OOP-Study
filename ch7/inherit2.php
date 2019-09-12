@@ -17,5 +17,9 @@
 			return $this->salary ;
 		}
 	}
+	class Executive extends Employee
+	{
+		
+	}
 
 ?>
