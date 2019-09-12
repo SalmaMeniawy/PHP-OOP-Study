@@ -21,8 +21,11 @@
 	{
 		public function pillageCompany()
 		{
-			$this->setSalary($this->getSalary() * 10);
+			$this->setSalary($this->getSalary() * 10);	
 		}
 	}
-
+	class CEO extends Executive
+	{
+		
+	}
 ?>
