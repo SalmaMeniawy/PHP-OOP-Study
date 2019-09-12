@@ -26,6 +26,9 @@
 	}
 	class CEO extends Executive
 	{
-		
+		public function getFacelift()
+		{
+			echo "nip nip tuck tuck \n";
+		}
 	}
 ?>
