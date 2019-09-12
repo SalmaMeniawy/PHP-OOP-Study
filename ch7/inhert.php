@@ -25,3 +25,7 @@
 
 	}
 ?>
+<?php
+	//create new instance "object"from executive class
+	$exec = new Executive();
+?>
