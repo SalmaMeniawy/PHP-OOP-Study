@@ -8,6 +8,10 @@
 		{
 			$this->name = $name;
 		}
+		public function setSalary($salary)
+		{
+			$this->salary = $salary;
+		}
 	}
 
 ?>
