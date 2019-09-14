@@ -32,7 +32,9 @@
 	{
 		function __construct($name)
 		{
-			parent::__construct($name);
+			// parent::__construct($name);
+			Employee::__construct($name);
+			Executive::__construct($name);
 			echo "<br><p>CEO Object is created </p>";
 		}
 		public function getFacelift()
