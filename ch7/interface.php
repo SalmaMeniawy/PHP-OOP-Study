@@ -20,4 +20,16 @@
 			echo "truch the echo suite";
 		}
 	}
+	class Assistant extends Employee implements iPillage
+	{
+		function takeMemo()
+		{
+			echo " Memo taking .... ";
+		}
+		function emptyBankAccount()
+		{
+			echo "Go on shopping spree with office credit card.";
+
+		}
+	}
 ?>
