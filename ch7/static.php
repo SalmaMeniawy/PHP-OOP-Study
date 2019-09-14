@@ -10,6 +10,8 @@ class Employee
 class Executive extends Employee
 {
 	public static $favSport = "polp";
-	
+
 }
+echo Executive::watchTv();
+echo Executive::$favSport;
 ?>
