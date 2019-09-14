@@ -2,6 +2,9 @@
 class Employee
 {
 	public static $favSport = "football";
-	
+	public static function 	watchTv()
+	{
+		echo "watching ".self::$favSport;
+	}
 }
 ?>
