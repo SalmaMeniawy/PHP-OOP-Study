@@ -7,4 +7,9 @@ class Employee
 		echo "watching ".self::$favSport;
 	}
 }
+class Executive extends Employee
+{
+	public static $favSport = "polp";
+	
+}
 ?>
