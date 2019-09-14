@@ -31,5 +31,10 @@
 			echo "Go on shopping spree with office credit card.";
 
 		}
+		function burnDocuments()
+		{
+			echo "Start small fire in the trash can.";
+
+		}
 	}
 ?>
