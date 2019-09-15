@@ -9,4 +9,13 @@
 		}
 		abstract function setDescription($description)
 	}
+
+	class Newspaper extends Media
+	{
+		function setDescription($description)
+		{
+
+		}
+		
+	}
 ?>
