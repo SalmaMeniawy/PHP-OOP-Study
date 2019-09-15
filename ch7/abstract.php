@@ -7,5 +7,6 @@
 		{
 			$this->title = $title;
 		}
+		abstract function setDescription($description)
 	}
 ?>
