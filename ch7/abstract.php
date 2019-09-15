@@ -8,7 +8,7 @@
 			$this->title = $title;
 		}
 		abstract function setDescription($description);
-	}
+	};
 
 	class Newspaper extends Media
 	{
@@ -32,4 +32,5 @@
 
 		}
 	}
+	// $emp = new Media();
 ?>
