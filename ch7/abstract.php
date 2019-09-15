@@ -16,6 +16,9 @@
 		{
 
 		}
-		
+		function setSubscribers($subscribers)
+		{
+			
+		}
 	}
 ?>
