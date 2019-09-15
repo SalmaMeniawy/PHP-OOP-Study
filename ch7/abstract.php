@@ -21,4 +21,8 @@
 			
 		}
 	}
+	class CD extends Media
+	{
+		
+	}
 ?>
