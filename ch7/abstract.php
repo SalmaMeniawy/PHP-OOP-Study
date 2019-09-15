@@ -25,6 +25,10 @@
 	{
 		function setDescription($description)
 		{
+
+		}
+		function setCopiesSolid($subscribers)
+		{
 			
 		}
 	}
