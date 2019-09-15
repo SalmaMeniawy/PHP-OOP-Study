@@ -23,6 +23,9 @@
 	}
 	class CD extends Media
 	{
-		
+		function setDescription($description)
+		{
+			
+		}
 	}
 ?>
