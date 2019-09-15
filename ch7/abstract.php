@@ -7,7 +7,7 @@
 		{
 			$this->title = $title;
 		}
-		abstract function setDescription($description)
+		abstract function setDescription($description);
 	}
 
 	class Newspaper extends Media
@@ -29,7 +29,7 @@
 		}
 		function setCopiesSolid($subscribers)
 		{
-			
+
 		}
 	}
 ?>
