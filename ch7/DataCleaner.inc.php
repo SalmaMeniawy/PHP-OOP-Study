@@ -2,6 +2,8 @@
 	namespace DataCleaner;
 	use Library;
 	use DataCleaner;
+	// Instantiate the Library's Clean class
+	$filter = new Library\Clean();
 	class Clean
 	{
 		function removeProfanity($text)

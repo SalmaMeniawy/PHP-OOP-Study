@@ -1,7 +1,9 @@
 <?php
 	require "DataCleaner.inc.php";
 	require "Library.inc.php";
-
+	use Library;
+	use DataCleaner;
+	
 	abstract class Media
 	{
 		private $title ;
