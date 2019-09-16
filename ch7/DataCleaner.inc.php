@@ -1,4 +1,5 @@
 <?php
+	namespace DataCleaner;
 	class Clean
 	{
 		function removeProfanity($text)
@@ -8,7 +9,7 @@
 							  "insane"=>"illogical");
 			// Replace bad words
 			return strtr($text,$badwords); 	
-			
+
 		}
 	}
 ?>
