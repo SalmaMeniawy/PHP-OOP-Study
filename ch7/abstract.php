@@ -19,6 +19,11 @@
 	$title = $profanity->removeProfanity($title);
 
 	printf("<br>Title after Library\Clean: %s<br>",$title);
+
+	// Remove white space and capitalize title
+	$title = $filter->filterTitle($title);
+
+	printf("<br>Title after DataCleaner\Clean: %s <br>",$title);
 	abstract class Media
 	{
 		private $title ;
