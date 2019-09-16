@@ -15,7 +15,10 @@
 	// Output the title before filtering occurs
 	printf("Title before filters: %s <br />", $title);
 
+	// Remove profanity from the title
+	$title = $profanity->removeProfanity($title);
 
+	printf("<br>Title after Library\Clean: %s<br>",$title);
 	abstract class Media
 	{
 		private $title ;
