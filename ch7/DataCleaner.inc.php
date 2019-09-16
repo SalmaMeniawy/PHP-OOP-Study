@@ -1,5 +1,7 @@
 <?php
 	namespace DataCleaner;
+	use Library;
+	use DataCleaner;
 	class Clean
 	{
 		function removeProfanity($text)
