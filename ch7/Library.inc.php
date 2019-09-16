@@ -1,4 +1,5 @@
 <?php
+	namespace Library;
 	class Clean
 	{
 		function filterTitle($text)
