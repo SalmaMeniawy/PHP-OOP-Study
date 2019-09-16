@@ -59,4 +59,8 @@
 	}
 
 	// $emp = new Media();
+	$text = "\t\tthese are a few words :) ... <br>";
+	var_dump($text);
+	var_dump(ucfirst(trim($text)));
+
 ?>
