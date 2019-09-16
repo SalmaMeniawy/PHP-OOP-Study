@@ -12,7 +12,7 @@
 		private $totalStockOption;
 		function emptyBankAccount()
 		{
-			echo "Call CFO and ask to transfer funds to Swiss bank account.";
+			echo "Call CFO and ask to transfer funds to Swiss bank account.<br>";
 
 		}
 		function burnDocuments()
@@ -28,7 +28,7 @@
 		}
 		function emptyBankAccount()
 		{
-			echo "Go on shopping spree with office credit card.";
+			echo "Go on shopping spree with office credit card.<br>";
 
 		}
 		function burnDocuments()
@@ -37,4 +37,11 @@
 
 		}
 	}
+	$emp = new Executive();
+	$emp->emptyBankAccount();
+
+	$emp1 = new Assistant();
+	$emp1->emptyBankAccount();
+	$emp1->takeMemo();
+	echo interface_exists(iPillage);
 ?>
