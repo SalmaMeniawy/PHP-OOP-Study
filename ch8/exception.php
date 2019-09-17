@@ -17,6 +17,11 @@ class MyException extends Exception
 		return $errorArray[$this->errorcode];
 	}
 }
-
+try{
+	throw new MyException("english",4);
+}catch(MyException $e)
+{
+	echo $e->getMessageMap();
+}
 
 ?>
