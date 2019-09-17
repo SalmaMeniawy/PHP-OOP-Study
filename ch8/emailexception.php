@@ -7,8 +7,8 @@
 	{
 		function __construct($message ,$email)
 		{
-			$this->email = $email;
 			$this->message = $message;
+			$this->notifyAdmin($email) ;
 		}
 	}
 ?>
