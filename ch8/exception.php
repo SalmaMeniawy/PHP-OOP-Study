@@ -8,13 +8,22 @@ class MyException extends Exception
 	}
 	function getMessageMap()
 	{
-		$errors= file("errors/{$this->language}.txt");
-		foreach ($errors as $error)
-		{
-			list($key , $value) = explode(",", $error,2);
+		$errorArray = Null;
+		// $errors= file("errors/{$this->language}.txt");
+		// print_r($errors);
+		// foreach($errors as $error)
+		// {
+		// 	list($key , $value) = explode(",", $error,2);
+		// 	$errorArray[$key] = $value;
+		// }
+		// return $errorArray[$this->errorcode];
+		$errors = file("/errors/{$this->language}.txt");
+		foreach($errors as $error){
+			list($key,$value) = explode(",", $error, 2);
 			$errorArray[$key] = $value;
 		}
 		return $errorArray[$this->errorcode];
+
 	}
 }
 try{
