@@ -53,5 +53,14 @@
 		}
 
 	}
+	// Assume that the e-mail address came from a subscription form
+	$POST['email'] = "someuser@example.com";
 
+	/* Attempt to validate and add address to database. */
+	if(isset($POST['email']))
+	{
+		$subscribe = new Subscribe();
+		if($subscribe->validateEmail($POST['email']))
+			$subscribe->subscribeUser($POST['email']);
+	}
 ?>
