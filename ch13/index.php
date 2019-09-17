@@ -8,7 +8,7 @@
 	}
 
 ?>
-<form action="subscribe.php" method="POST">
+<form action=<?php echo $_SERVER['PHP_SELF']; ?> 			method=POST" >
 	<p>	
 		Name : 
 		<input type="text" name="name" id="name" size="20"
@@ -20,3 +20,6 @@
 	</p>
 	<input type="submit" name="submit" id="submit" value="Go">
 </form>
+<?php
+	echo $_SERVER['PHP_SELF'];
+?>
