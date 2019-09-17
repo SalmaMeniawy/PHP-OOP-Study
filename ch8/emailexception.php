@@ -46,7 +46,11 @@
 				$e->notifyAdmin($email);
 			}
 		}
-
+		/* Add the e-mail address to the database */
+		function subscribeUser()
+		{
+			echo $this->email."add to the database !!";
+		}
 
 	}
 
