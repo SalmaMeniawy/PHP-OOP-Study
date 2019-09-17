@@ -10,5 +10,9 @@
 			$this->message = $message;
 			$this->notifyAdmin($email) ;
 		}
+		private function notifyAdmin($email)
+		{
+			mail("admin@example.org", "invalid Email",$email,"From:web@gmail.com");
+		}
 	}
 ?>
