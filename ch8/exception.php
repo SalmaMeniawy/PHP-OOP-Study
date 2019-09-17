@@ -6,6 +6,16 @@ class MyException extends Exception
 		$this->language = $language;
 		$this->errorcode = $errorcode;
 	}
+	function getMessageMap()
+	{
+		$errors= file("errors/{$this->language}.txt");
+		foreach ($errors as $error)
+		{
+			list($key , $value) = explode(",", $error,2);
+			$errorArray[$key] = $value;
+		}
+		return $errorArray[$this->errorcode];
+	}
 }
 
 
