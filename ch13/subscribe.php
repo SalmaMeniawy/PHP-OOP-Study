@@ -14,7 +14,7 @@ $input = "I <td> really </td> love <i> PHP </i>";
 $input = strip_tags($input,"<i> </i>");
 //echo "$input";
 $email = "salma@@gmail.com";
-if(!filter_var($email,FILTER_VALID_EMAIL))
+if(!filter_var($email,FILTER_VALIDATE_EMAIL))
 {
 	echo " Invalid Email";
 }
