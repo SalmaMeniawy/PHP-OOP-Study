@@ -1,10 +1,6 @@
-<?php
-	if(isset($_POST['name']))
-	{
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		printf("Hi -- %s",$name);
-		printf("<br>Address is %s  will soon be a spam-magnet! ",$email);
-	}
+<!-- $userInput = "I am going to hax0r your site, hahaha!
+	<script type='text/javascript'>
+	window.location = 'http://www.example.com/'
+	</script>'";
 
-?>
+$userInputEntities = htmlentities($userInput); -->
