@@ -8,3 +8,10 @@ $userInputEntities = htmlentities($userInput);
 echo "$userInputEntities<br>";
 
 ?>
+<?php
+$input = "I <td> really </td> love <i> PHP </i>";
+//echo "$input";
+$input = strip_tags($input,"<i> </i>");
+//echo "$input";
+
+?>
