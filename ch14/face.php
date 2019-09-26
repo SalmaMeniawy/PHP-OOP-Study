@@ -4,9 +4,9 @@ define('APP_SECRET','');
 // error_reporting(E_ALL ^ E_NOTICE);
 require_once('./composer/vendor/facebook/graph-sdk/src/Facebook/Facebook.php');
 require_once('./composer/vendor/facebook/graph-sdk/src/Facebook/FacebookApp.php');
-
+use Facebook\Facebook;
 //create facebook object
-$facebook = new Facebook\Facebook(
+$facebook = new Facebook(
    ['app_id'=> APP_ID,
    'app_secret'=> APP_SECRET,
    'default_graph_version'=>'v3.2']
