@@ -14,5 +14,9 @@ var_dump($session_vars);
 echo strlen($session_vars);
 echo $_SESSION['username'];
 // var_dump($my_session_vars);
+echo "\n";
+echo session_id()."<br>";
+session_regenerate_id();
+echo session_id()."<br>";
 
 ?>
