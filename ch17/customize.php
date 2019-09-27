@@ -2,8 +2,8 @@
     if(isset($_POST['font_size']) && isset($_POST['font_color']))
     {
         //if the form has value send the cookies
-        setcookie('font_size',$_POST['font_size']);
-        setcookie('font_color',$_POST['font_color']);
+        setcookie('font_size',$_POST['font_size'],time()+10000000,'/','',0);
+        setcookie('font_color',$_POST['font_color'],time()+10000000,'/','',0);
         //message printed
         $msg ='<p> your setting have been entered <a href= "view_settings.php">here is the link </a>  </p>';
     }
