@@ -8,6 +8,9 @@
    //to delete cookie
    setcookie('cookieName',FALSE); //first way
    setcookie($name,''); //the secound way
-
+    //try to create and start session
+    session_start();
+    $_SESSION['first_name'] = "Salamonty";
+    $_SESSION['age']=23;
 
 ?>
