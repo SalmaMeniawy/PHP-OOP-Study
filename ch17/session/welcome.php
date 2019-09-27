@@ -6,6 +6,9 @@
     print "<h2>Welcome to the J.D. Salinger Fan Club! </h2>";
     print "hello !!".$_SESSION['email']." ".$_SESSION['password']."\n";
 
-    print"<a href='logout.php'>Logout!! </a>"
+    print"<a href='logout.php'>Logout!! </a>"."<br>";
+    $id = session_id();
+    echo $id;
+
 
 ?>
