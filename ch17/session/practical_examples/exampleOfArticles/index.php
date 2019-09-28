@@ -19,5 +19,10 @@
         $stmt->bind_result($id , $title ,$content);
         $stmt->fetch();
     }
-
+    //add article title and link to the list
+    $articleLink = "<a href='index.php?id={$id}'>{$title}</a>";
+    if(!in_array($articleLink , $_SESSION['articles']))
+    {
+        $_SESSION['articles'] = $articleLink;
+    }
 ?>
