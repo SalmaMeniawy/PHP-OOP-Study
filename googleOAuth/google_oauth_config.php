@@ -27,7 +27,18 @@
     if(isset($_SESSION['access_token']) && $_SESSION['access_token'])
     {
         $client->setAccessToken($_SESSION['access_token']);
-        
-    }
 
+    }
+    //store user data
+    if($client->getAccessToken())
+    {
+        $userData = $objRes->userinfo->get();
+        if(!empty($userData))
+        {
+            var_dump($userData);
+        }
+        $_SESSION['access_token']= $client->getAccessTocken();
+    }else{
+        $googleAuthUrl = $client->creatAuthUrl();
+    }
 ?>
