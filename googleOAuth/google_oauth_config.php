@@ -21,6 +21,12 @@
         $client->authenticate($_GET['code']);
         $_SESSION['access_token'] = $client->getAccessTocken();
         header('Location:'.filter_var($redirect_url,FILTER_SANITIZE_URL));
+
+    }
+    //set token
+    if(isset($_SESSION['access_token']) && $_SESSION['access_token'])
+    {
+        $client->setAccessToken($_SESSION['access_token']);
         
     }
 
