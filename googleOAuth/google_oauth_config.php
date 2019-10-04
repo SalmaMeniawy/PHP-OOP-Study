@@ -39,6 +39,17 @@
         }
         $_SESSION['access_token']= $client->getAccessTocken();
     }else{
-        $googleAuthUrl = $client->creatAuthUrl();
+        // $googleAuthUrl = $client->reateAuthUrl();
+        echo "ERROR";
     }
+?>
+<?php
+
+//Logout
+if (isset($_REQUEST['logout'])) {
+    unset($_SESSION['access_token']);
+    $client->revokeToken();
+    header('Location: ' . filter_var($redirect_uri, FILTER_SANITIZE_URL)); //redirect user back to page
+  }
+
 ?>
