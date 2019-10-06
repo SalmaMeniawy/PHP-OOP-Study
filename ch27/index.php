@@ -11,5 +11,6 @@
     // $connection->select_db(DB_NAME);
     // mysqli_connect_error();
     printf("mysql Error number generated : %d ",$connection->connect_errno);
+    printf("mysql Error number generated : %d ",$connection->errno);
 
 ?>
