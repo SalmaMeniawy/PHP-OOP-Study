@@ -14,9 +14,14 @@
      $connection->connect_error));
      exit();
  }
-    $query = 'DELETE FROM products WHERE sku="TY457566"';
+    $query = 'DELETE FROM products WHERE sku="OB56545"';
     $result = $connection->query($query,MYSQLI_STORE_RESULT);
     // var_dump($result);
+    /**
+     * affected rows that display the number of rows that deleted so 
+     * it is property in the mysqli class
+     */
+    printf("%d rows have been deleted.<br>", $connection->affected_rows);
     // printf("%d rows have been deleted and remain",$result->affected_rows );
     $query1='SELECT sku, name FROM products ORDER by name';
     $result1 = $connection->query($query1);
